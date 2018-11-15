@@ -109,15 +109,15 @@
 iframe {
     position: absolute;
     bottom: 0;
-    right: -8.6rem;
+    right: -350px;
     z-index: 150;
 }
 
 .drag {
     z-index: 150;
     position: absolute;
-    bottom: 0.6rem;
-    right: 0.2rem;
+    bottom: 20px;
+    right: 10px;
     font-weight: 600;
     font-size: 0.8rem;
     font-family: "黑体";

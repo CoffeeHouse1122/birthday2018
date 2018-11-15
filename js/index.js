@@ -50,17 +50,17 @@ function countDown(time) {
 var flag = true
 $(".drag").click(function () {
     if (flag == true) {
-        $(".drag").animate({ right: "8.8rem" }, 1000, function () {
+        $(".drag").animate({ right: "350px" }, 1000, function () {
             // $(".drag").text("》")
             flag = false
         })
         $("iframe").animate({ right: "0" }, 1000)
     } else {
-        $(".drag").animate({ right: "0.2rem" }, 1000, function () {
+        $(".drag").animate({ right: "10px" }, 1000, function () {
             // $(".drag").text("《")
             flag = true
         })
-        $("iframe").animate({ right: "-8.8rem" }, 1000) 
+        $("iframe").animate({ right: "-350px" }, 1000) 
     }
 
 })

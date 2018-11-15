@@ -26,7 +26,7 @@ var canvas = document.getElementById("cas");
 
         var newTime = new Date();
         if(newTime-lastTime>500+(window.innerHeight-767)/2){
-            var random = Math.random()*100>15?true:false;
+            var random = Math.random()*100>20?true:false;
             var x = getRandom(canvas.width/5 , canvas.width*4/5);
             var y = getRandom(50 , 200);
             if(random){
@@ -220,8 +220,8 @@ var canvas = document.getElementById("cas");
         else {
             var text = ele.innerHTML;
             context.save();
-            var fontSize = 2;
-            context.font = fontSize+"rem 微软雅黑 bold";
+            var fontSize = 100;
+            context.font = fontSize+"px 微软雅黑 bold";
             context.textAlign = "center";
             context.textBaseline = "middle";
             context.fillStyle = "rgba("+parseInt(getRandom(128,255))+","+parseInt(getRandom(128,255))+","+parseInt(getRandom(128,255))+" , 1)";
