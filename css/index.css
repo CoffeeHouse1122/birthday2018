@@ -114,9 +114,11 @@ iframe {
 }
 
 .drag {
+    height: 86px;
+    line-height: 86px;
     z-index: 150;
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     right: 10px;
     font-weight: 600;
     font-size: 0.8rem;

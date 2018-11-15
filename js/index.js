@@ -1,3 +1,7 @@
+if (window.screen.width <= 320 || window.screen.height <= 640 ) {
+    $(".drag").hide()
+    $(".box").hide()
+}
 // 喜欢
 $(".one-like").click(function(){
     $(".cover-top").animate({height: "50%", top: "0"}, 1000, function(){
@@ -50,7 +54,7 @@ function countDown(time) {
 var flag = true
 $(".drag").click(function () {
     if (flag == true) {
-        $(".drag").animate({ right: "350px" }, 1000, function () {
+        $(".drag").animate({ right: "336px" }, 1000, function () {
             // $(".drag").text("》")
             flag = false
         })
@@ -60,7 +64,7 @@ $(".drag").click(function () {
             // $(".drag").text("《")
             flag = true
         })
-        $("iframe").animate({ right: "-350px" }, 1000) 
+        $("iframe").animate({ right: "-336px" }, 1000) 
     }
 
 })
