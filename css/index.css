@@ -1,0 +1,99 @@
+ /* 遮盖层 */
+ .cover-top {
+    background: #66cccc;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 0;
+    z-index: 200;
+ }
+ .cover-bottom {
+    background: #66cccc;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 0;
+    z-index: 200;
+ }
+ /* 第一屏 */
+ .oneScene  {
+     width: 100%;
+     height: 100%;
+ }
+ .one-select {
+    margin-top: 18%;
+    width: 100%;
+    height: 2rem;
+    overflow: hidden;
+}
+.oneScene .one-select a {
+    display: inline-block;
+    width: 30%;
+    height: 1.2rem;
+    margin-left: 12%;
+    border-radius: 0.2rem;
+    background-color: #F38630;
+    color: #F9D423;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.2rem;
+}
+.oneScene .one-select a:hover {
+    background-color: #F9D423;
+    color: #F38630;
+}
+/* 第二屏 */
+.twoScene {
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+}
+
+.twoScene .city {
+    width:100%;
+    position:fixed;
+    bottom: 0px;
+    z-index: 100;
+}
+.twoScene .city img {
+    width: 100%;
+}
+/* 第三屏 */
+.threeScene {
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+    background: #666666;
+    text-align: center;
+}
+.threeScene p:first-child {
+    margin-top: 6rem;
+}
+.threeScene .countDown,p {
+    font-weight: 600;
+    font-size: 0.8rem;
+    font-family: "黑体";
+    color: #8c888b;
+    background: -webkit-linear-gradient(45deg, #70f7fe, #fbd7c6, #fdefac, #bfb5dd, #bed5f5);
+    background: -moz-linear-gradient(45deg, #70f7fe, #fbd7c6, #fdefac, #bfb5dd, #bed5f5);
+    background: -ms-linear-gradient(45deg, #70f7fe, #fbd7c6, #fdefac, #bfb5dd, #bed5f5);
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: ran 10s linear infinite;
+}
+
+@keyframes ran {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 2000px 0;
+    }
+}
+.threeScene .countDown {
+    margin-top: 1rem;
+    font-size: 4rem;
+}
