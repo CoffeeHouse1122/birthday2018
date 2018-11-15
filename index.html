@@ -5,24 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+    <link rel="stylesheet" href="./css/flexible.debug.css">
+    <script src="./js/flexible.debug.js"></script>
     <title>happy birthday</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/cake.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" type="text/css" href="./icon/iconfont.css">
-    <style>
-        #musicImg {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            font-size: 1rem;
-        }
-    </style>
 </head>
 <body>
- <audio src="./img/111.mp3" preload="meta" loop autoplay id="bgmusic"></audio>
- <i class="iconfont icon-shuangsechangyongtubiao-" id="musicImg" onClick="play()"></i>
+<div class="drag">《</div>
+<div class="box">
+        <iframe frameborder="no" src="https://music.163.com/outchain/player?type=2&id=1301103968&auto=1&height=66" border="0" marginwidth="0" marginheight="0" width=330 height=86></iframe>
+</div>
     <!-- 遮盖层 -->
     <div class="cover-top"></div>
     <div class="cover-bottom"></div>
@@ -227,22 +221,6 @@
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/fireworks.js"></script>
 <script src="./js/index.js"></script>
-
-<script>
-function play() {
-    var audio = document.getElementById('bgmusic');
-    if (audio.paused) {
-        audio.play();
-        document.getElementById('musicImg').classList.remove("icon-shuangsechangyongtubiao-1");
-        document.getElementById('musicImg').classList.add("icon-shuangsechangyongtubiao-");
-    }else{
-        audio.pause();
-        // audio.currentTime = 0;//音乐从头播放
-        document.getElementById('musicImg').classList.remove("icon-shuangsechangyongtubiao-");
-        document.getElementById('musicImg').classList.add("icon-shuangsechangyongtubiao-1");
-    }
-}
-</script>
 </body>
 
 </html>
