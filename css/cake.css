@@ -13,7 +13,7 @@ body {
   display: block;
   position: relative;
   left: 50%;
-  top: -120px;
+  top: -160px;
   margin-left: -100px;
 }
 
@@ -23,7 +23,7 @@ body {
   background: #ffffff;
   border-radius: 10px;
   position: absolute;
-  top: 260px;
+  top: 220px;
   left: 50%;
   margin-left: -2.5px;
   margin-top: -8.33333333px;
@@ -144,7 +144,7 @@ body {
   }
 }
 .text {
-  margin-top: -120px;
+  margin-top: -160px;
   font-weight: 300;
   text-align: center;
 }
