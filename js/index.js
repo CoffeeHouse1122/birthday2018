@@ -18,7 +18,7 @@ $(".one-like").click(function(){
 // 不喜欢
 $(".one-dislike").click(function(){
     $(".cover-top").animate({height: "50%", top: "0"}, 1000, function(){
-        $(".oneScene").hide()
+        $(".oneScene").css({visibility: "hidden", width: "0", height: "0"})
         $(".threeScene").show(function(){
             var time = 10
             countDown(time)
@@ -39,7 +39,7 @@ function countDown(time) {
             if (time == 0) {
                 $(".cover-top").animate({height: "50%", top: "0"}, 1000, function(){
                     $(".threeScene").hide()
-                    $(".oneScene").show()
+                    $(".oneScene").css({visibility: "visible", width: "100%", height: "100%"})
                 })
                 $(".cover-bottom").animate({height: "50%", bottom: "0"}, 1000, function() {
                     $(".cover-top").animate({height: "0", top: "0"}, 2000)
